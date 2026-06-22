@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>View Registered Courses | Campus Course Connect</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Campus Course Connect</h1>
+      <nav aria-label="Main navigation">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="view.html">View Registered Courses</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Your Registered Courses</h2>
+      <p>The table below shows the courses you have registered for this semester.</p>
+      <div class="table-responsive">
+        <table>
+          <caption>Registered courses summary</caption>
+          <thead>
+            <tr>
+              <th scope="col">Course Code</th>
+              <th scope="col">Course Title</th>
+              <th scope="col">Credits</th>
+              <th scope="col">Schedule</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BUS 101</td>
+              <td>Introduction to Business</td>
+              <td>3</td>
+              <td>Mon/Wed 9:00 - 10:15</td>
+              <td><button class="button drop-button" type="button">Drop</button></td>
+            </tr>
+            <tr>
+              <td>DATA 305</td>
+              <td>Business Analytics</td>
+              <td>4</td>
+              <td>Tue/Thu 11:00 - 12:30</td>
+              <td><button class="button drop-button" type="button">Drop</button></td>
+            </tr>
+            <tr>
+              <td>ECON 202</td>
+              <td>Microeconomics</td>
+              <td>3</td>
+              <td>Mon/Wed 1:00 - 2:15</td>
+              <td><button class="button drop-button" type="button">Drop</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Bill Sause &copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
