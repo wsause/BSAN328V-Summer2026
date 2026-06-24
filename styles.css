@@ -257,4 +257,56 @@ tr:last-child td {
   table {
     width: 100%;
   }
+
+  .table-responsive {
+    overflow-x: hidden;
+  }
+
+  table {
+    border: 0;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 1rem;
+    background: #ffffff;
+    border: 1px solid #d9e2ec;
+    border-radius: 0.85rem;
+    box-shadow: 0 0.5rem 1rem rgba(16, 42, 67, 0.05);
+    padding: 0.75rem;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border: 0;
+    border-bottom: 1px solid #d9e2ec;
+  }
+
+  td:last-child {
+    border-bottom: 0;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #102a43;
+    flex: 0 0 40%;
+  }
+
+  td > * {
+    width: 60%;
+    text-align: right;
+  }
+
+  td > button {
+    width: auto;
+    padding: 0.65rem 1rem;
+  }
 }
